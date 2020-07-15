@@ -7,8 +7,10 @@ const {hash} = window.location;
 
      document.querySelector('h1').innerHTML = message;
  }
+ 
 document.querySelector('form').addEventListener('submit', event=>{
     event.preventDefault();
+    console.log('hi');
     document.querySelector('#message-form').classList.add('hide');
     document.querySelector('#link-form').classList.remove('hide');
     const input =  document.querySelector('#message-input');
